@@ -1,0 +1,8 @@
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; padding: 2rem; background:#f7fafc; }
+.container{ max-width:720px; margin:0 auto; }
+.chat-window{ height: 60vh; overflow:auto; background:white; border:1px solid #e2e8f0; padding:1rem; border-radius:8px; }
+.message{ padding:0.5rem; margin-bottom:0.5rem; border-radius:6px; background:#edf2f7; }
+.meta{ font-size:0.8rem; color:#718096; }
+.input-area{ display:flex; gap:0.5rem; margin-top:0.75rem }
+.input-area input{ padding:0.5rem; flex:1 }
+.input-area button{ padding:0.5rem 1rem }
