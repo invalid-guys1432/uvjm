@@ -1,0 +1,27 @@
+name = "cf-chat-pages"
+main = "worker/chatRoom.js"
+compatibility_date = "2025-11-15"
+
+
+# Durable Objects binding
+[durable_objects]
+bindings = [
+{ name = "CHAT_ROOM", class_name = "ChatRoom" }
+]
+
+
+# D1 binding (replace database_id after creating a D1 database in Cloudflare)
+[[d1_databases]]
+binding = "D1"
+database_name = "CHAT_DB"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+
+
+[build]
+command = ""
+upload_format = "service-worker"
+
+
+# Optional: environment variables for production
+[env.production]
+# e.g. any secret keys
